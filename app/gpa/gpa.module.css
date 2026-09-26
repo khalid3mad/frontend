@@ -1,0 +1,207 @@
+.container {
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding: 40px 7%;
+  color: #182b49;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  color: #182b49;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #667085;
+  font-size: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 8px 30px rgba(24, 43, 73, 0.08);
+  border: 1px solid #e3e8ef;
+}
+
+.currentGPA {
+  background: #182b49;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.currentGPA h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+
+.currentInputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.currentInputs div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.currentInputs label {
+  font-size: 14px;
+  color: #dce5f2;
+}
+
+.currentInputs input {
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 16px;
+  color: #182b49;
+  outline: none;
+  background: white;
+}
+
+.currentInputs input:focus {
+  box-shadow: 0 0 0 3px rgba(215, 181, 109, 0.45);
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 15px;
+  padding: 0 5px 10px;
+  color: #667085;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.courseRow {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.courseRow select {
+  flex: 1;
+  min-width: 130px;
+  height: 46px;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  padding: 0 12px;
+  background: white;
+  color: #182b49;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.courseRow select:focus {
+  border-color: #182b49;
+  box-shadow: 0 0 0 2px rgba(24, 43, 73, 0.1);
+}
+
+.addButton {
+  margin-top: 10px;
+  padding: 11px 18px;
+  border: 1px solid #182b49;
+  border-radius: 8px;
+  background: white;
+  color: #182b49;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.addButton:hover {
+  background: #182b49;
+  color: white;
+}
+
+.removeButton {
+  height: 42px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 8px;
+  background: #eef1f5;
+  color: #667085;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.removeButton:hover {
+  background: #182b49;
+  color: white;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #eef3f9;
+  text-align: center;
+  border: 1px solid #dce5f0;
+}
+
+.result p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+.result h2 {
+  margin: 8px 0 3px;
+  color: #182b49;
+  font-size: 42px;
+}
+
+.result span {
+  color: #667085;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 25px 18px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .currentInputs {
+    grid-template-columns: 1fr;
+  }
+
+  .tableHeader {
+    display: none;
+  }
+
+  .courseRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .courseRow select {
+    width: 100%;
+  }
+
+  .removeButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,223 @@
+.page {
+  min-height: 100vh;
+  background: #f4f1ea;
+  color: #182333;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 55px 35px 90px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 45px;
+  text-decoration: none;
+  color: #747873;
+  font-size: 11px;
+}
+
+.backLink:hover {
+  color: #182b49;
+}
+
+.header {
+  margin-bottom: 38px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: #9a7944;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.header h1 {
+  color: #182b49;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #7a7e78;
+  font-size: 13px;
+}
+
+.facultyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.facultyCard {
+  position: relative;
+  min-height: 220px;
+  padding: 23px;
+  border: 1px solid #ddd8cd;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.facultyCard:hover {
+  transform: translateY(-3px);
+  background: white;
+  box-shadow: 0 12px 30px rgba(30, 40, 50, 0.07);
+}
+
+.facultyCard.selected {
+  background: #182b49;
+  border-color: #182b49;
+}
+
+.number {
+  display: block;
+  color: #9a7944;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 65px;
+}
+
+.facultyCard h2 {
+  max-width: 250px;
+  color: #182b49;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.facultyCard.selected h2 {
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  color: #8b8e87;
+  font-size: 20px;
+}
+
+.facultyCard.selected .arrow {
+  color: #d7b56d;
+}
+
+.majorSection {
+  margin-top: 55px;
+  padding-top: 32px;
+  border-top: 1px solid #d8d3c9;
+}
+
+.majorHeader h2 {
+  color: #182b49;
+  font-size: 22px;
+}
+
+.majorList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.majorCard {
+  width: 100%;
+  padding: 19px 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd8cd;
+  border-radius: 12px;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.majorCard:hover {
+  border-color: #bdb6a8;
+}
+
+.majorCard div span {
+  display: block;
+  margin-bottom: 5px;
+  color: #9a7944;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.majorCard h3 {
+  color: #182b49;
+  font-size: 14px;
+}
+
+.majorCard > span {
+  color: #8b8e87;
+  font-size: 18px;
+}
+
+.empty {
+  margin-top: 22px;
+  padding: 30px;
+  border: 1px dashed #cfc8ba;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.empty h3 {
+  color: #182b49;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.empty p {
+  color: #7d817b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.page :global(.rtl) .facultyCard {
+  text-align: right;
+}
+
+.page :global(.rtl) .majorCard {
+  text-align: right;
+}
+
+.page :global(.rtl) .arrow {
+  right: auto;
+  left: 20px;
+}
+
+@media (max-width: 850px) {
+  .facultyGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbarInner {
+    padding: 0 18px;
+  }
+
+  .container {
+    padding: 40px 18px 70px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .facultyCard {
+    min-height: 180px;
+  }
+
+  .number {
+    margin-bottom: 45px;
+  }
+}
