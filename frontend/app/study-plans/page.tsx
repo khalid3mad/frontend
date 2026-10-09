@@ -40,7 +40,8 @@ const faculties = [
     [
       {
         name: "Civil Engineering",
-        nameAr: "الهندسة المدنية",},
+        nameAr: "الهندسة المدنية",
+      },
       {
         name: "Electrical Engineering",
         nameAr: "الهندسة الكهربائية", 
